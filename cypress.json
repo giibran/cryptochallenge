@@ -1,0 +1,12 @@
+{
+    "viewportHeight": 690,
+    "viewportWidth": 1280,
+    "env": {
+        "emailMexico": "example@mail.com",
+        "passwordMexico": "password",
+        "pinMexico": "1234",
+        "emailArgentina": "example@mail.com",
+        "passwordArgentina": "password",
+        "pinArgentina": "1234"
+    }
+}
