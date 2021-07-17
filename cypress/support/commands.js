@@ -27,6 +27,19 @@ Cypress.Commands.add('signUpGenericFlow', (email, password) => {
   cy.get('#accept_mail').click({ force: true })
   cy.get('#accept_privacy').click({ force: true })
 })
+
+Cypress.Commands.add('clickAllCryptosGenericFlow', () => {
+  cy.contains('label', 'btc').click()
+  cy.contains('label', 'bat').click()
+  cy.contains('label', 'bch').click()
+  cy.contains('label', 'dai').click()
+  cy.contains('label', 'eth').click()
+  cy.contains('label', 'ltc').click()
+  cy.contains('label', 'mana').click()
+  cy.contains('label', 'tusd').click()
+  cy.contains('label', 'usdt').click()
+  cy.contains('label', 'xrp').click()
+})
 //
 //
 // -- This is a child command --
