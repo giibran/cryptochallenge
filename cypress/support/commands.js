@@ -30,7 +30,13 @@ Cypress.Commands.add('signUpGenericFlow', (email, password) => {
 
 Cypress.Commands.add('clickAllCryptosGenericFlow', () => {
   cy.contains('label', 'btc').click()
+  cy.get('.moon-arrow_deposit').click()
+  cy.get('[data-testid="crypto-risk-warning-checkbox"]').click({force: true})
+  cy.get('[data-testid="crypto-risk-warning-button"]').click({force: true})
+  cy.contains('h3', 'Oops! Something went wrong').type('{esc}')
   cy.contains('label', 'bat').click()
+  cy.get('.moon-arrow_deposit').click()
+  cy.contains('h3', 'Oops! Something went wrong').type('{esc}')
   cy.contains('label', 'bch').click()
   cy.contains('label', 'dai').click()
   cy.contains('label', 'eth').click()
